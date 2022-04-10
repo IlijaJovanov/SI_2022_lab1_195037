@@ -1,0 +1,96 @@
+1  https://github.com/IlijaJovanov
+4.$ git clone https://github.com/IlijaJovanov/SI_2022_lab1_195037.git
+$ cd SI_2022_lab1_195037
+5.$ notepad shopping_list.txt
+$ git add shopping_list.txt
+
+$ git commit -m "Add 5 items to the shopping list"
+6$ git commit -a -m "Add wuantities to the items"
+7$ git checkout -b branch1
+$ git checkout master
+
+$ git checkout -b branch2
+$ git checkout master
+8$ git log
+commit db5a637b145935bfb9c9fe5d00670d2699d406a0 (HEAD -> master, origin/master, commit db5a637b145935bfb9c9fe5d00670d2699d406a0 (HEAD -> master, origin/master,
+origin/HEAD, branch2, branch1)
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:01:06 2022 +0200
+
+    Add wuantities to the items
+
+commit ab743710203effc31b79dea17d3619da5d2752b8
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 14:56:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 77105beae8f936ee3c26e0d0a666f1048a951f1a
+Author: Ilija_Jovanov_195037 <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 05:33:29 2022 +0200
+
+    Update README.md
+
+commit 191021375c849f82862f951157f4d26d9855405b
+Author: Ilija_Jovanov_195037 <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 05:32:34 2022 +0200
+9.$ git push origin branch1
+$ git push origin branch2
+10$ git checkout branch1
+11$ git commit -a -m "“Change quantity of item"
+12$ git checkout master
+13 $ git commit -a -m "“Change quantity of item #2"
+14$ git push origin branch1
+$ git push origin branch2
+15$ git checkout branch2
+16$ git commit -a -m "Modify item #4"
+17$ $ git log
+commit e03a3a76cc8c06504d80576678dc02e3f7dd8180 (HEAD -> branch2)
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:35:20 2022 +0200
+
+    Modify item #4
+
+commit db5a637b145935bfb9c9fe5d00670d2699d406a0 (origin/master, origin/branch2, origin/HEAD)
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:01:06 2022 +0200
+
+    Add wuantities to the items
+
+commit ab743710203effc31b79dea17d3619da5d2752b8
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 14:56:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 77105beae8f936ee3c26e0d0a666f1048a951f1a
+Author: Ilija_Jovanov_195037 <ilejovanov2
+18$ git commit -a -m "Modify item #4 and add item #6"
+19git log
+commit efa9469556e0b45d31351958ed3f2d69018233fb (HEAD -> branch2)
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:37:50 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit e03a3a76cc8c06504d80576678dc02e3f7dd8180
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:35:20 2022 +0200
+
+    Modify item #4
+
+commit db5a637b145935bfb9c9fe5d00670d2699d406a0 (origin/master, origin/branch2, origin/HEAD)
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 15:01:06 2022 +0200
+
+    Add wuantities to the items
+
+commit ab743710203effc31b79dea17d3619da5d2752b8
+Author: IlijaJovanov <ilejovanov2016@gmail.com>
+Date:   Sun Apr 10 14:56:14 2022 +0200
+20$ git checkout master
+$ git merge branch1
+21$ git merge branch2
+
+23$ git push origin branch1
+$ git push origin branch2
